@@ -1,0 +1,20 @@
+#Practice with identifying virtual machines that meets two requirements: 1) The status is "error" and 2) the type is "t2.micro". This is a practice problem to get used to looping through a list of virtual machines and checking for certain conditions. This code is not connected to Azure, but it is a practice for how to loop through a list of virtual machines and check for certain conditions.
+
+from azure.identity import DefaultAzureCredential
+from azure.mgmt.resource import ResourceManagementClient
+
+#This is the code for the practice problem. It is not connected to Azure, but it is a practice for how to loop through a list of virtual machines and check for certain conditions.
+instances = [
+    {"id": "i-12345", "status": "running", "type": "t2.micro"},
+    {"id": "i-67890", "status": "error",   "type": "t2.large"},
+    {"id": "i-11223", "status": "error", "type": "t2.micro"},
+    {"id": "i-33445", "status": "error",   "type": "m5.large"}]
+
+#Start the error count at 0, and loop through the instances. If the status is error and the type is t2.micro, then we add to the error count and print out the ID of the instance. Finally, we print out the total number of virtual machines with errors.
+error_count = 0
+for a in instances:
+    if a["status"]=="error" and a["type"]=="t2.micro":
+        error_count+=1
+        print(f"{a['id']} is in error state.")
+print(f"The number of virtual machines with errors: {error_count}")
+#If ran correctly, the number of virtual machines with errors should be 1, and the ID of the instance in error state should be i-11223.
