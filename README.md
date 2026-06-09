@@ -1,6 +1,6 @@
 # ☁️ Cloud Engineering Portfolio
 
-Welcome to my Cloud Engineering repository! This space serves as a central hub for my infrastructure-as-code (IaC) development, documenting my journey and practice with modern cloud automation and security practices. 🚀
+This is a central hub for my infrastructure-as-code (IaC) development, documenting my projects with Terraform and how to utilize it instead of building with Azure Portal. 🚀
 
 ## 📂 Repository Contents
 
