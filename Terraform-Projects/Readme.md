@@ -28,3 +28,9 @@ Across these projects, configurations are built to showcase adherence to enterpr
 * **Modular Architecture:** Designing reusable, highly parameterized modules to deploy scalable infrastructure across different environments.
 * **State Management:** Configuring secure, remote backends to safely manage state tracking, resource locking, and collaboration.
 * **Security & Perimeter Hardening:** Setting up strict Network Security Groups (NSGs), isolated subnets, and secure access vectors to protect data in transit and at rest.
+
+## Terraform Code Remidner
+terraform init
+terraform plan
+terraform apply
+terraform destroy
