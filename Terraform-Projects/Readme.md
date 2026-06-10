@@ -30,7 +30,7 @@ Across these projects, configurations are built to showcase adherence to enterpr
 * **Security & Perimeter Hardening:** Setting up strict Network Security Groups (NSGs), isolated subnets, and secure access vectors to protect data in transit and at rest.
 
 ## Terraform Code Remidner 
-terraform init 
-terraform plan 
-terraform apply 
-terraform destroy
+terraform init  
+terraform plan  
+terraform apply  
+terraform destroy 
