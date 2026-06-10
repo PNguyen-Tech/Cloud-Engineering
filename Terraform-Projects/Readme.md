@@ -29,8 +29,8 @@ Across these projects, configurations are built to showcase adherence to enterpr
 * **State Management:** Configuring secure, remote backends to safely manage state tracking, resource locking, and collaboration.
 * **Security & Perimeter Hardening:** Setting up strict Network Security Groups (NSGs), isolated subnets, and secure access vectors to protect data in transit and at rest.
 
-## Terraform Code Remidner 
-terraform init  
-terraform plan  
-terraform apply  
-terraform destroy 
+## Terraform Code Reminder 
+terraform init: downloads the required cloud provider plugins and sets up your working directory.    
+terraform plan: previews a secure dry run of exactly what infrastructure will be created, changed, or deleted.    
+terraform apply:  fires off the live API calls to physically build your configured resources in the cloud.  
+terraform destroy: systematically tears down and deletes every cloud resource managed by that script to safely clean your slate.   
