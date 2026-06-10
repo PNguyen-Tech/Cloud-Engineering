@@ -1,16 +1,12 @@
-Here is the updated `README.md` file with the development workflow section completely translated to use native **PowerShell** commands instead of Bash.
-
----
-
 # 🏗️ Terraform Infrastructure Portfolio
 
-Welcome to my central repository for Cloud Engineering and Infrastructure as Code (IaC) development. This repository serves as a portfolio of my work architecting, provisioning, and automating secure cloud environments exclusively using Terraform.
+This is my central repository for Cloud Engineering and Infrastructure as Code (IaC) development. This repository serves as a portfolio of my work architecting, provisioning, and automating secure cloud environments exclusively using Terraform.
 
 ---
 
 ## 📂 Repository Architecture
 
-This repository houses four distinct practice projects designed to explore the full deployment lifecycle of modern cloud infrastructure. The directory is structured as follows:
+This repository contains practice projects designed to explore the deployment of modern cloud infrastructure using Terraform. The directory is structured as follows:
 
 ```text
 /
