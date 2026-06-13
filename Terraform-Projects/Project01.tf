@@ -3,6 +3,7 @@
 # This is my first practice project and its main purpose is to create a resource group named "portfolio-landing-zone-rg" in the South Central US region,
 # along with a virtual network, subnet, and network security group (NSG) using Terraform. This code divides into 5 easy to read sections and gives me a better understanding
 # of resource references and dependency. 
+# No VMs will be created yet because I want to minimize cost to $0. 
 # ==============================================================================
 
 
@@ -52,7 +53,7 @@ resource "azurerm_virtual_network" "vnet" {
 # 4. Create a Subnet
 resource "azurerm_subnet" "subnet" {
   name                 = "web-tier-subnet" #Name of the subnet
-  resource_group_name  = azurerm_resource_group.my_main_rg.name #azurerm_resounce_group is always the same. It references to "my_main_rg" 
+  resource_group_name  = azurerm_resource_group.my_main_rg.name #azurerm_resource_group is always the same. It references to "my_main_rg" 
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.1.0/24"]
 }
