@@ -1,5 +1,5 @@
 #==============================================================================
-# AZURE Project Summary
+# AZURE Project #1 Summary
 # This is my first practice project and its main purpose is to create a resource group named "portfolio-landing-zone-rg" in the South Central US region,
 # along with a virtual network, subnet, and network security group (NSG) using Terraform. This code divides into 5 easy to read sections and gives me a better understanding
 # of resource references and dependency. 
