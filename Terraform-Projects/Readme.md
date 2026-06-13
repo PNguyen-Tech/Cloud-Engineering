@@ -12,8 +12,8 @@ This repository contains practice projects designed to explore the deployment of
 /
 ├── README.md                 # Portfolio overview and documentation
 └── terraform/                # Infrastructure as Code deployments
-    ├── project-01/           # Base networking and core infrastructure
-    ├── project-02/           # Multi-tier web applications
+    ├── project-01/           # Base networking and core infrastructure (Creating a resource group, VNet, Subnet, NSG and a security rule)
+    ├── project-02/           # Building on Project #1, create multiple new resources and new dependencies. 
     ├── project-03/           # Identity, access management, and governance
     └── project-04/           # Secure key vaults and disk encryption
 
