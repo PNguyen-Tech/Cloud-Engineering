@@ -12,17 +12,14 @@
 # What I Learned: Core Terraform & IDE Concepts
 #1. IDE References & Smart Navigation
 #The Concept: When editing a resource name in VS Code, features like CodeLens references or definition popups can show where that resource is used throughout the project.
-
 # The Reality: This tool is great for navigation, but it doesn't automatically fix or sync your code everywhere if you rename something. Because autofill and tracking features can occasionally be inconsistent, manual code reviews or running a terraform plan are essential to catch mismatched names and syntax errors.
 
 #2. Security Decoupling & Explicit Routing
 #The Concept: A network security rule can be extracted from the main Network Security Group (NSG) block and managed as its own separate entity.
-
 # The Reality: Moving a rule out on its own means you must explicitly tell it which Resource Group and NSG container it belongs to using tracking arguments inside the block.
 
 #3. Subnet Association Controls
 #The Concept: Creating an NSG doesn't mean it is automatically protecting your network traffic.
-
 # The Reality: Once an NSG is built, you must use an explicit association block (azurerm_subnet_network_security_group_association) to physically link that security barrier to the correct subnet. This becomes critical as infrastructure scales to include multiple subnets or virtual networks across different regions.
 
 # ==============================================================================
