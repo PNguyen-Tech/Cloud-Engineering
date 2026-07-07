@@ -14,10 +14,9 @@ A collection of practice environments and modules designed to explore Terraform�
 * State management and best practices. 🛠️
 * Multi-tier architecture deployments. 🌐
 
-### 2. Azure Infrastructure Automation ☁️
+### 2. Azure Infrastructure Automation (Python) ☁️
 
-A dedicated section for cloud infrastructure code developed specifically for the Microsoft Azure ecosystem. This includes:
+A dedicated section for cloud infrastructure code developed specifically for the Microsoft Azure ecosystem using:
 
 * Automation scripts utilizing Python. 🐍
 * Integration with Azure SDKs. 🔗
-* Infrastructure management and policy-as-code initiatives. 🛡️
