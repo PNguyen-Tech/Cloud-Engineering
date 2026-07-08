@@ -1,3 +1,7 @@
+# ==========================================
+# 1. Root Enterprise Landing Zone Settings
+# ==========================================
+
 # 1. Terraform Configuration and Provider Requirements
 terraform {
   required_version = ">= 1.7.0"
