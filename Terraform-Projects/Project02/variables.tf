@@ -1,12 +1,22 @@
+# ==========================================
+# 1. Root Enterprise Landing Zone Settings
+# ==========================================
+
 variable "root_id" {
   type        = string
   description = "The ID used for the root management group and prefixing resources."
+  default     = "alz" # Optional: provides a sensible default prefix
 }
 
 variable "root_name" {
   type        = string
   description = "The display name for the root management group."
+  default     = "Azure Landing Zones"
 }
+
+# ==========================================
+# 2. Platform Core Subscription IDs
+# ==========================================
 
 variable "subscription_id_management" {
   type        = string
@@ -22,6 +32,10 @@ variable "subscription_id_identity" {
   type        = string
   description = "Subscription ID for Active Directory domain controllers or identity services."
 }
+
+# ==========================================
+# 3. Landing Zone Workload Subscription IDs
+# ==========================================
 
 variable "subscription_id_workloads_corp" {
   type        = string
