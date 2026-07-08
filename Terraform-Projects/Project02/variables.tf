@@ -29,19 +29,19 @@ variable "root_name" {
 #   - Connectivity: Where the main network routers, firewalls, and DNS records live.
 #   - Identity: Where security logins and domain controllers are kept.
 
-variable "subscription_id_management" {
+variable "subscription_id_katsu_management" {
   type        = string
-  description = "Subscription ID for central logging, monitoring, and management."
+  description = "Subscription ID for central logging, monitoring, and management for Katsu Corp."
 }
 
-variable "subscription_id_connectivity" {
+variable "subscription_id_katsu_connectivity" {
   type        = string
-  description = "Subscription ID for hub networking, firewalls, and DNS zones."
+  description = "Subscription ID for hub networking, firewalls, and DNS zones for Katsu Corp."
 }
 
-variable "subscription_id_identity" {
+variable "subscription_id_katsu_identity" {
   type        = string
-  description = "Subscription ID for Active Directory domain controllers or identity services."
+  description = "Subscription ID for Active Directory domain controllers or identity services for Katsu Corp."
 }
 
 
