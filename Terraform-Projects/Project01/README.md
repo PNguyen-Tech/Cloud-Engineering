@@ -27,12 +27,12 @@ Azure Subscription
 
 ## 🚀 Core Infrastructure Components
 
-* **Multi-Region Resource Isolation:** Configures discrete Resource Groups across `southcentralus` and `eastus` to simulate multi-environment segmentation.
+* **Multi-Region Resource Isolation:** Configures different Resource Groups across `southcentralus` and `eastus` to simulate multi-environment segmentation.
 * **Non-Overlapping CIDR Strategy:** Allocates `10.0.0.0/16` and `10.1.0.0/16` spaces to ensure future VNet peering compatibility without address collisions.
 * **Granular Web-Tier Subnetting:** Isolates a `/24` subnet (`10.0.1.0/24`) ready for compute/workload hosting.
-* **Decoupled Security Management:** Implements `azurerm_network_security_rule` as an independent resource rather than an inline block for modular policy administration.
-* **Explicit Subnet Association:** Binds floating security groups directly to the target subnet via `azurerm_subnet_network_security_group_association`.
-* **Zero Compute Cost Architecture:** Provisions foundational networking without compute resources (VMs) to ensure zero active runtime expenses during testing.
+* **Decoupled Security Management:** Implements `azurerm_network_security_rule` as a modular component to easily manage, update or remove individual NSG rules without affecting the main NSG block. 
+* **Explicit Subnet Association:** Links the NSG rules to the corresponding subnet that I want to protect `azurerm_subnet_network_security_group_association`.
+* **Zero Compute Cost Architecture:** Created basic networking practice without incurring charges. 
 
 ---
 
