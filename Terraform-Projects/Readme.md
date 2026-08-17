@@ -14,8 +14,6 @@ This repository contains practice projects designed to explore the deployment of
 └── terraform/                # Infrastructure as Code deployments
     ├── project-01/           # Base networking and core infrastructure (Creating multipe resource group, VNet, Subnet, NSG and a security rule)
     ├── project-02/           # Deploy a basic Azure Landing Zone, implementing enterprise cloud foundations including networking, security, identity, monitoring, and application infrastructure.
-    ├── project-03/           # Identity, access management, and governance
-    └── project-04/           # Secure key vaults and disk encryption
 
 ```
 ## 🛠️ Cloud Engineering Philosophy 
