@@ -91,9 +91,3 @@ terraform apply tfplan
 terraform destroy -auto-approve
 
 ```
-
-
-
-```
-
-```
