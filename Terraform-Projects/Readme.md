@@ -1,6 +1,6 @@
 # 🏗️ Terraform Infrastructure Portfolio
 
-This is my central repository for Cloud Engineering and Infrastructure as Code (IaC) development. This repository serves as a portfolio of my work architecting, provisioning, and automating secure cloud environments exclusively using Terraform.
+This is the repository for Cloud Engineering and Infrastructure as Code (IaC) development. This repository serves as a portfolio of my work architecting, provisioning, and automating secure cloud environments exclusively using Terraform.
 
 ---
 
