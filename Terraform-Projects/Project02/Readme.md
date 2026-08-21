@@ -1,6 +1,6 @@
 ## Project #2: Sample Azure Landing Zone Deployment
 
-The goal of this project is to build aN **Azure Landing Zone (Enterprise-Scale)** framework. This framework establishes a secure, prebuilt, multi-subscription environment prepared for enterprise workloads to be deployed.
+The goal of this project is to build a **Azure Landing Zone (Enterprise-Scale)** framework. This framework establishes a secure, prebuilt environment prepared for enterprise workloads to be deployed.
 
 To make the code and architectural syntax easier to read and understand, the infrastructure is customized around a fictional company named after my dog, **Katsu** (Katsu Corp).
 
@@ -11,7 +11,7 @@ To make the code and architectural syntax easier to read and understand, the inf
 An Infrastructure as Code (IaC) workspace is split into specialized files to ensure separated compartments and clean management. Here is how the components interact:
 
 #### 1. `providers.tf` (The Remote Control Analogy)
-This file configures Terraform to communicate securely with the Azure API by defining the required CLI version and enforcing AzureRM provider requirements using the pessimistic constraint operator (~>) to lock in major versions while allowing minor patches. This configuration mimics an enterprise-grade, compartmentalized framework by utilizing provider aliases for three distinct target subscriptions (Management, Connectivity, and Identity) with a fallback default alias. This mirrors real-world cloud landing zones, demonstrating an understanding of how to minimize the security blast radius while keeping billing easily separated and managed.
+This file configures Terraform to communicate securely with the Azure API by defining the required CLI version and enforcing AzureRM provider requirements using the pessimistic operator (~>) to remain in the major versions while allowing minor patches (4.1,4,2 but not 5.0). This configuration models an enterprise-grade, separating the subscriptions by utilizing aliases into three distinct  subscriptions (Management, Connectivity, and Identity) with a fallback default alias. This mirrors real-world cloud landing zones, demonstrating an understanding of how to minimize the security blast radius while keeping billing easily separated and managed.
 
 #### 2. `variables.tf` (The Blueprints)
 This file explicitly declares the input variables that our infrastructure expects (such as subscription IDs or naming prefixes). It acts like an empty form or blueprint defining *what kind* of information is required without hardcoding actual sensitive values.
